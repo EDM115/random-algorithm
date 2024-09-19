@@ -1,5 +1,5 @@
 # random_algorithm
-A very simple random algo made while thinking too much about it  
+A very simple yet original random algo made while overthinking about randomness
 ![PyPI - Version](https://img.shields.io/pypi/v/random_algorithm) ![PyPI - Downloads](https://img.shields.io/pypi/dm/random_algorithm) ![Pepy Total Downlods](https://img.shields.io/pepy/dt/random_algorithm)
 
 `random_algorithm` is a Python library that generates random numbers using a novel approach based on English words and the current epoch time. It utilizes ASCII values of shuffled words, reduces them to single digits, and combines these digits to generate a random number of a specified size. This implementation attempts to get as close as possible to true randomness by using time-based factors and word shuffling.
@@ -10,10 +10,11 @@ A very simple random algo made while thinking too much about it
 - ASCII values of each word are reduced to single digits.
 - Supports dynamic generation of random numbers of any specified size.
 - Includes special logic to generate lower numbers (like `0` or `1`), which can sometimes be difficult to produce with traditional randomization methods.
+- Provides functions to extract seeds based on time and to reduce any number to a single digit.
 
 ## Usage
 
-1. Install the package in your repo
+Install the package in your repo
 
 ```bash
 pip install random_algorithm
@@ -22,7 +23,7 @@ pip install random_algorithm
 **If you use a requirements file, add this line to it :**
 
 ```bash
-random_algorithm==1.0.0
+random_algorithm==1.1.0
 ```
 
 You can import and use the library in your Python code like this :
@@ -31,15 +32,23 @@ You can import and use the library in your Python code like this :
 from random_algorithm import gen_random
 ```
 
-Generate a random number with a desired size of 5 digits :
+Example :  
+> Generate a random number with a desired size of 5 digits
 
 ```python
 random_number = gen_random(desired_size=5)
 print(f"Generated random number : {random_number}")
 ```
 
-Note that we also export the internal function `ascii_reduce()` :
-- `ascii_reduce(word, index)` : Takes a word in input (ex "github") and an index (can be any positive number). It then reduces the word to a single number (returns an int).
+You can also use the following internal functions :
+- `ascii_reduce(word, index)` :
+   - Takes a word (ex `"github"`) and an index (can be any positive number) as input.
+   - Reduces the word to a single digit (returns an `int`).
+- `reduce_to_single_digit(n)` :
+   - Reduces any integer `n` to a single digit by summing its digits repeatedly until one digit remains.
+   - For example, `reduce_to_single_digit(9875)` would return `2`.
+- `get_time_seed()` :
+   - Generates a seed based on the current time and ASCII reduction of character permutations.
 
 ### Handling errors
 
@@ -57,6 +66,7 @@ Note that we also export the internal function `ascii_reduce()` :
 2. **Random index** : The current epoch time is used to generate a random index into the shuffled word list.
 3. **ASCII reduction** : Each word's ASCII values are reduced to single digits and then summed to produce a random number.
 4. **Low numbers handling** : A special condition ensures that numbers like `0` and `1` can be generated using the current epoch time modulo operations.
+5. 5. **Time Seed**: `get_time_seed()` creates a seed value based on permutations of characters from the current time.
 
 ## Contributing
 
@@ -77,7 +87,7 @@ py -m twine upload dist/*
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.  
-The wordlist comes from from https://github.com/dwyl/english-words
+The wordlist comes from from https://github.com/dwyl/english-words.
 
 ## Authors
 

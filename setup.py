@@ -5,7 +5,7 @@ with open("README.md") as f:
 
 setup(
   name="random_algorithm",
-  version="1.0.0",
+  version="1.1.0",
   description="A random number generator based on shuffled English words, their ASCII values, and the current epoch time to create highly randomized outputs",
   long_description=long_description,
   long_description_content_type="text/markdown",
