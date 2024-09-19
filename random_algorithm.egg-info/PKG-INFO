@@ -1,3 +1,45 @@
+Metadata-Version: 2.1
+Name: random_algorithm
+Version: 1.0.0
+Summary: A random number generator based on shuffled English words, their ASCII values, and the current epoch time to create highly randomized outputs
+Home-page: https://github.com/EDM115/random_algorithm
+Author: EDM115
+Author-email: EDM115 <dev@edm115.eu.org>
+License: MIT License
+        
+        Copyright (c) 2024 EDM115
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/EDM115/random_algorithm
+Project-URL: Bug Tracker, https://github.com/EDM115/random_algorithm/issues
+Project-URL: Funding, https://github.com/EDM115#support-me-
+Keywords: random,number,generator,ascii,english,algorithm
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
 # random_algorithm
 A very simple random algo made while thinking too much about it  
 ![PyPI - Version](https://img.shields.io/pypi/v/random_algorithm) ![PyPI - Downloads](https://img.shields.io/pypi/dm/random_algorithm) ![Pepy Total Downlods](https://img.shields.io/pepy/dt/random_algorithm)

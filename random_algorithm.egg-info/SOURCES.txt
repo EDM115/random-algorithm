@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+random_algorithm/__init__.py
+random_algorithm/random_algorithm.py
+random_algorithm/wordlist.txt
+random_algorithm/words_list.py
+random_algorithm.egg-info/PKG-INFO
+random_algorithm.egg-info/SOURCES.txt
+random_algorithm.egg-info/dependency_links.txt
+random_algorithm.egg-info/top_level.txt

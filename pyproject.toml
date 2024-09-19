@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=75.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "random_algorithm"
+version = "1.0.0"
+authors = [
+  { name="EDM115", email="dev@edm115.eu.org" },
+]
+description = "A random number generator based on shuffled English words, their ASCII values, and the current epoch time to create highly randomized outputs"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["random", "number", "generator", "ascii", "english", "algorithm"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 2",
+  "Programming Language :: Python :: 3"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/EDM115/random_algorithm"
+"Bug Tracker" = "https://github.com/EDM115/random_algorithm/issues"
+"Funding" = "https://github.com/EDM115#support-me-"
