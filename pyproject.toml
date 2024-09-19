@@ -22,6 +22,6 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/EDM115/random_algorithm"
-"Bug Tracker" = "https://github.com/EDM115/random_algorithm/issues"
+"Homepage" = "https://github.com/EDM115/random-algorithm"
+"Bug Tracker" = "https://github.com/EDM115/random-algorithm/issues"
 "Funding" = "https://github.com/EDM115#support-me-"
