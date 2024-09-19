@@ -1,5 +1,5 @@
 # random_algorithm
-A very simple yet original random algo made while overthinking about randomness
+A very simple yet original random algo made while overthinking about randomness  
 ![PyPI - Version](https://img.shields.io/pypi/v/random_algorithm) ![PyPI - Downloads](https://img.shields.io/pypi/dm/random_algorithm) ![Pepy Total Downlods](https://img.shields.io/pepy/dt/random_algorithm)
 
 `random_algorithm` is a Python library that generates random numbers using a novel approach based on English words and the current epoch time. It utilizes ASCII values of shuffled words, reduces them to single digits, and combines these digits to generate a random number of a specified size. This implementation attempts to get as close as possible to true randomness by using time-based factors and word shuffling.
@@ -66,7 +66,7 @@ You can also use the following internal functions :
 2. **Random index** : The current epoch time is used to generate a random index into the shuffled word list.
 3. **ASCII reduction** : Each word's ASCII values are reduced to single digits and then summed to produce a random number.
 4. **Low numbers handling** : A special condition ensures that numbers like `0` and `1` can be generated using the current epoch time modulo operations.
-5. 5. **Time Seed**: `get_time_seed()` creates a seed value based on permutations of characters from the current time.
+5. **Time Seed**: `get_time_seed()` creates a seed value based on permutations of characters from the current time.
 
 ## Contributing
 
