@@ -74,6 +74,7 @@ The time it takes to generate numbers is pretty linear, I'd evaluate it to $O(n)
 Here's a quick overview :  
 ![Analysis of the time taken to generate random numbers from 1 to 100](./linear_gen_time.png)  
 On my potato PC, an extrapolation of some results give the following formula (keep in mind that performance will change depending on your hardware) :  
+
 $$  
 \text{Time (seconds)} \approx 0.1623 \times \text{Desired size} + 0.1468  
 $$  
