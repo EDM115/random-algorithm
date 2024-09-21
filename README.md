@@ -68,6 +68,20 @@ You can also use the following internal functions :
 4. **Low numbers handling** : A special condition ensures that numbers like `0` and `1` can be generated using the current epoch time modulo operations.
 5. **Time Seed**: `get_time_seed()` creates a seed value based on permutations of characters from the current time.
 
+## Side notes
+
+The time it takes to generate numbers is pretty linear, I'd evaluate it to $O(n)$  
+Here's a quick overview :  
+![Analysis of the time taken to generate random numbers from 1 to 100](./linear_gen_time.png)  
+On my potato PC, an extrapolation of some results give the following formula (keep in mind that performance will change depending on your hardware) :  
+$$  
+\text{Time (seconds)} \approx 0.1623 \times \text{Desired size} + 0.1468  
+$$  
+  
+As a final info, here's the word length distribution of the dictionnary we use : 
+![Distribution of word length](./word_length_distribution.png)  
+[(*more*)](https://chatgpt.com/share/66ef0268-990c-8005-a6aa-67ad5f415e39)
+
 ## Contributing
 
 Feel free to open an [issue](https://github.com/EDM115/random-algorithm/issues) or a [pull request](https://github.com/EDM115/random-algorithm/pulls) if you want to contribute to this project
